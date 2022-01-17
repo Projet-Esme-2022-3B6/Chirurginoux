@@ -1,0 +1,16 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "269a7b21-fbfe-4e7a-8bbe-c8de2ec0d833": {
+      "ProjectGuid": "269a7b21-fbfe-4e7a-8bbe-c8de2ec0d833",
+      "DisplayName": "BodyBasics-WPF",
+      "ColorIndex": 0
+    },
+    "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3": {
+      "ProjectGuid": "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3",
+      "DisplayName": "Fichiers divers",
+      "ColorIndex": -1
+    }
+  },
+  "NextColorIndex": 1
+}

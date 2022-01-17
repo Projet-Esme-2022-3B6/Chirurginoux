@@ -1,0 +1,15 @@
+C:\Users\hussa\Desktop\Projet KinectArm\Code\TestClientSever\TestClientSever\bin\Debug\net6.0\TestClientSever.exe
+C:\Users\hussa\Desktop\Projet KinectArm\Code\TestClientSever\TestClientSever\bin\Debug\net6.0\TestClientSever.deps.json
+C:\Users\hussa\Desktop\Projet KinectArm\Code\TestClientSever\TestClientSever\bin\Debug\net6.0\TestClientSever.runtimeconfig.json
+C:\Users\hussa\Desktop\Projet KinectArm\Code\TestClientSever\TestClientSever\bin\Debug\net6.0\TestClientSever.dll
+C:\Users\hussa\Desktop\Projet KinectArm\Code\TestClientSever\TestClientSever\bin\Debug\net6.0\ref\TestClientSever.dll
+C:\Users\hussa\Desktop\Projet KinectArm\Code\TestClientSever\TestClientSever\bin\Debug\net6.0\TestClientSever.pdb
+C:\Users\hussa\Desktop\Projet KinectArm\Code\TestClientSever\TestClientSever\obj\Debug\net6.0\TestClientSever.csproj.AssemblyReference.cache
+C:\Users\hussa\Desktop\Projet KinectArm\Code\TestClientSever\TestClientSever\obj\Debug\net6.0\TestClientSever.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\hussa\Desktop\Projet KinectArm\Code\TestClientSever\TestClientSever\obj\Debug\net6.0\TestClientSever.AssemblyInfoInputs.cache
+C:\Users\hussa\Desktop\Projet KinectArm\Code\TestClientSever\TestClientSever\obj\Debug\net6.0\TestClientSever.AssemblyInfo.cs
+C:\Users\hussa\Desktop\Projet KinectArm\Code\TestClientSever\TestClientSever\obj\Debug\net6.0\TestClientSever.csproj.CoreCompileInputs.cache
+C:\Users\hussa\Desktop\Projet KinectArm\Code\TestClientSever\TestClientSever\obj\Debug\net6.0\TestClientSever.dll
+C:\Users\hussa\Desktop\Projet KinectArm\Code\TestClientSever\TestClientSever\obj\Debug\net6.0\ref\TestClientSever.dll
+C:\Users\hussa\Desktop\Projet KinectArm\Code\TestClientSever\TestClientSever\obj\Debug\net6.0\TestClientSever.pdb
+C:\Users\hussa\Desktop\Projet KinectArm\Code\TestClientSever\TestClientSever\obj\Debug\net6.0\TestClientSever.genruntimeconfig.cache

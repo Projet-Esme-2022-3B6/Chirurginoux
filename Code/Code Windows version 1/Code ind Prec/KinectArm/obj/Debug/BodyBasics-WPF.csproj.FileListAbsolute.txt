@@ -1,0 +1,36 @@
+C:\Users\hussa\Desktop\Projet KinectArm\Kinect Sample\BodyBasics-WPF\bin\AnyCPU\Debug\BodyBasics-WPF.exe.config
+C:\Users\hussa\Desktop\Projet KinectArm\Kinect Sample\BodyBasics-WPF\bin\AnyCPU\Debug\BodyBasics-WPF.exe
+C:\Users\hussa\Desktop\Projet KinectArm\Kinect Sample\BodyBasics-WPF\bin\AnyCPU\Debug\BodyBasics-WPF.pdb
+C:\Users\hussa\Desktop\Projet KinectArm\Kinect Sample\BodyBasics-WPF\bin\AnyCPU\Debug\Microsoft.Kinect.dll
+C:\Users\hussa\Desktop\Projet KinectArm\Kinect Sample\BodyBasics-WPF\bin\AnyCPU\Debug\Microsoft.Kinect.xml
+C:\Users\hussa\Desktop\Projet KinectArm\Kinect Sample\BodyBasics-WPF\obj\Debug\BodyBasics-WPF.csproj.AssemblyReference.cache
+C:\Users\hussa\Desktop\Projet KinectArm\Kinect Sample\BodyBasics-WPF\obj\Debug\BodyBasics-WPF.csproj.SuggestedBindingRedirects.cache
+C:\Users\hussa\Desktop\Projet KinectArm\Kinect Sample\BodyBasics-WPF\obj\Debug\MainWindow.baml
+C:\Users\hussa\Desktop\Projet KinectArm\Kinect Sample\BodyBasics-WPF\obj\Debug\MainWindow.g.cs
+C:\Users\hussa\Desktop\Projet KinectArm\Kinect Sample\BodyBasics-WPF\obj\Debug\App.g.cs
+C:\Users\hussa\Desktop\Projet KinectArm\Kinect Sample\BodyBasics-WPF\obj\Debug\BodyBasics-WPF_MarkupCompile.cache
+C:\Users\hussa\Desktop\Projet KinectArm\Kinect Sample\BodyBasics-WPF\obj\Debug\BodyBasics-WPF.g.resources
+C:\Users\hussa\Desktop\Projet KinectArm\Kinect Sample\BodyBasics-WPF\obj\Debug\Microsoft.Samples.Kinect.BodyBasics.Properties.Resources.resources
+C:\Users\hussa\Desktop\Projet KinectArm\Kinect Sample\BodyBasics-WPF\obj\Debug\BodyBasics-WPF.csproj.GenerateResource.cache
+C:\Users\hussa\Desktop\Projet KinectArm\Kinect Sample\BodyBasics-WPF\obj\Debug\BodyBasics-WPF.csproj.CoreCompileInputs.cache
+C:\Users\hussa\Desktop\Projet KinectArm\Kinect Sample\BodyBasics-WPF\obj\Debug\BodyBasics-WPF.csproj.CopyComplete
+C:\Users\hussa\Desktop\Projet KinectArm\Kinect Sample\BodyBasics-WPF\obj\Debug\BodyBasics-WPF.exe
+C:\Users\hussa\Desktop\Projet KinectArm\Kinect Sample\BodyBasics-WPF\obj\Debug\BodyBasics-WPF.pdb
+C:\Users\hussa\Desktop\Projet KinectArm\Code\KinectArm\bin\AnyCPU\Debug\BodyBasics-WPF.exe.config
+C:\Users\hussa\Desktop\Projet KinectArm\Code\KinectArm\bin\AnyCPU\Debug\BodyBasics-WPF.exe
+C:\Users\hussa\Desktop\Projet KinectArm\Code\KinectArm\bin\AnyCPU\Debug\BodyBasics-WPF.pdb
+C:\Users\hussa\Desktop\Projet KinectArm\Code\KinectArm\bin\AnyCPU\Debug\Microsoft.Kinect.dll
+C:\Users\hussa\Desktop\Projet KinectArm\Code\KinectArm\bin\AnyCPU\Debug\Microsoft.Kinect.xml
+C:\Users\hussa\Desktop\Projet KinectArm\Code\KinectArm\obj\Debug\BodyBasics-WPF.csproj.AssemblyReference.cache
+C:\Users\hussa\Desktop\Projet KinectArm\Code\KinectArm\obj\Debug\BodyBasics-WPF.csproj.SuggestedBindingRedirects.cache
+C:\Users\hussa\Desktop\Projet KinectArm\Code\KinectArm\obj\Debug\MainWindow.baml
+C:\Users\hussa\Desktop\Projet KinectArm\Code\KinectArm\obj\Debug\MainWindow.g.cs
+C:\Users\hussa\Desktop\Projet KinectArm\Code\KinectArm\obj\Debug\App.g.cs
+C:\Users\hussa\Desktop\Projet KinectArm\Code\KinectArm\obj\Debug\BodyBasics-WPF_MarkupCompile.cache
+C:\Users\hussa\Desktop\Projet KinectArm\Code\KinectArm\obj\Debug\BodyBasics-WPF.g.resources
+C:\Users\hussa\Desktop\Projet KinectArm\Code\KinectArm\obj\Debug\Microsoft.Samples.Kinect.BodyBasics.Properties.Resources.resources
+C:\Users\hussa\Desktop\Projet KinectArm\Code\KinectArm\obj\Debug\BodyBasics-WPF.csproj.GenerateResource.cache
+C:\Users\hussa\Desktop\Projet KinectArm\Code\KinectArm\obj\Debug\BodyBasics-WPF.csproj.CoreCompileInputs.cache
+C:\Users\hussa\Desktop\Projet KinectArm\Code\KinectArm\obj\Debug\BodyBasics-WPF.csproj.CopyComplete
+C:\Users\hussa\Desktop\Projet KinectArm\Code\KinectArm\obj\Debug\BodyBasics-WPF.exe
+C:\Users\hussa\Desktop\Projet KinectArm\Code\KinectArm\obj\Debug\BodyBasics-WPF.pdb
