@@ -68,10 +68,13 @@ namespace Microsoft.Samples.Kinect.BodyBasics
         private List<Pen> bodyColors;
 
         private string statusText = null;
+        private string statusRaspText = null;
         private string rPosTextX = "RH X Pos : 0";
         private string rPosTextY = "RH Y Pos : 0";
         private string rPosTextZ = "RH Z Pos : 0";
 
+        public int counter = 0;
+  
 
         protected UdpClient client;
         
@@ -218,6 +221,31 @@ namespace Microsoft.Samples.Kinect.BodyBasics
             }
         }
 
+        public string StatusRaspText
+        {
+            get
+            {
+                return this.statusRaspText;
+            }
+
+            set
+            {
+                if (this.statusRaspText != value)
+                {
+                    this.statusRaspText = value;
+
+                    // notify any bound elements that the text has changed
+                    if (this.PropertyChanged != null)
+                    {
+                        this.PropertyChanged(this, new PropertyChangedEventArgs("StatusRaspText"));
+                    }
+                }
+            }
+        }
+
+
+        // Getter et Setter des positions X, Y et Z de Right Hand 
+
         public string RPosXText
         {
             get
@@ -283,6 +311,7 @@ namespace Microsoft.Samples.Kinect.BodyBasics
                 }
             }
         }
+
 
         public void connectUDP()
         {
@@ -400,10 +429,22 @@ namespace Microsoft.Samples.Kinect.BodyBasics
                                 jointPoints[jointType] = new Point(depthSpacePoint.X, depthSpacePoint.Y);
                             }
                             CameraSpacePoint RHPos = joints[JointType.HandRight].Position;
-                            this.RPosXText = "RHPos X" + RHPos.X.ToString();
-                            this.RPosYText = "RHPos Y" + RHPos.Y.ToString();
-                            this.RPosZText = "RHPos Z" + RHPos.Z.ToString();
-                            this.SendPosition(RHPos.X.ToString(), RHPos.Y.ToString(), RHPos.Z.ToString());
+                            CameraSpacePoint SSPos = joints[JointType.SpineShoulder].Position;
+                            counter = counter + 1;
+                            if (counter % 10 == 0)
+                            {
+                                float FPosX = (SSPos.X - RHPos.X) * -100;
+                                float FPosY = ((SSPos.Y - RHPos.Y) * -100) + 30;
+                                float FPosZ = (SSPos.Z - RHPos.Z) * 100;
+
+
+
+                                this.RPosXText = "FPos X" + FPosX.ToString();
+                                this.RPosYText = "FPos Y" + FPosY.ToString();
+                                this.RPosZText = "FPos Z" + FPosZ.ToString();
+                                this.SendPosition(FPosX.ToString(), FPosY.ToString(), FPosZ.ToString());
+                            }
+
                             ///Console.WriteLine($"RHPos X {RHPos.X}");
                             ///Console.WriteLine($"RHPos Y {RHPos.Y}");
                             ///Console.WriteLine($"RHPos Z {RHPos.Z}");

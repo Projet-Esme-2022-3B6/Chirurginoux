@@ -34,3 +34,20 @@ C:\Users\hussa\Desktop\Projet KinectArm\Code\KinectArm\obj\Debug\BodyBasics-WPF.
 C:\Users\hussa\Desktop\Projet KinectArm\Code\KinectArm\obj\Debug\BodyBasics-WPF.csproj.CopyComplete
 C:\Users\hussa\Desktop\Projet KinectArm\Code\KinectArm\obj\Debug\BodyBasics-WPF.exe
 C:\Users\hussa\Desktop\Projet KinectArm\Code\KinectArm\obj\Debug\BodyBasics-WPF.pdb
+C:\Users\clair\Documents\Cours ESME\ingé 3\Projet Biotech\Chirurginoux\Code\Code Windows\KinectArm\bin\AnyCPU\Debug\BodyBasics-WPF.exe.config
+C:\Users\clair\Documents\Cours ESME\ingé 3\Projet Biotech\Chirurginoux\Code\Code Windows\KinectArm\bin\AnyCPU\Debug\BodyBasics-WPF.exe
+C:\Users\clair\Documents\Cours ESME\ingé 3\Projet Biotech\Chirurginoux\Code\Code Windows\KinectArm\bin\AnyCPU\Debug\BodyBasics-WPF.pdb
+C:\Users\clair\Documents\Cours ESME\ingé 3\Projet Biotech\Chirurginoux\Code\Code Windows\KinectArm\bin\AnyCPU\Debug\Microsoft.Kinect.dll
+C:\Users\clair\Documents\Cours ESME\ingé 3\Projet Biotech\Chirurginoux\Code\Code Windows\KinectArm\bin\AnyCPU\Debug\Microsoft.Kinect.xml
+C:\Users\clair\Documents\Cours ESME\ingé 3\Projet Biotech\Chirurginoux\Code\Code Windows\KinectArm\obj\Debug\BodyBasics-WPF.csprojAssemblyReference.cache
+C:\Users\clair\Documents\Cours ESME\ingé 3\Projet Biotech\Chirurginoux\Code\Code Windows\KinectArm\obj\Debug\MainWindow.baml
+C:\Users\clair\Documents\Cours ESME\ingé 3\Projet Biotech\Chirurginoux\Code\Code Windows\KinectArm\obj\Debug\MainWindow.g.cs
+C:\Users\clair\Documents\Cours ESME\ingé 3\Projet Biotech\Chirurginoux\Code\Code Windows\KinectArm\obj\Debug\App.g.cs
+C:\Users\clair\Documents\Cours ESME\ingé 3\Projet Biotech\Chirurginoux\Code\Code Windows\KinectArm\obj\Debug\BodyBasics-WPF_MarkupCompile.cache
+C:\Users\clair\Documents\Cours ESME\ingé 3\Projet Biotech\Chirurginoux\Code\Code Windows\KinectArm\obj\Debug\BodyBasics-WPF.g.resources
+C:\Users\clair\Documents\Cours ESME\ingé 3\Projet Biotech\Chirurginoux\Code\Code Windows\KinectArm\obj\Debug\Microsoft.Samples.Kinect.BodyBasics.Properties.Resources.resources
+C:\Users\clair\Documents\Cours ESME\ingé 3\Projet Biotech\Chirurginoux\Code\Code Windows\KinectArm\obj\Debug\BodyBasics-WPF.csproj.GenerateResource.cache
+C:\Users\clair\Documents\Cours ESME\ingé 3\Projet Biotech\Chirurginoux\Code\Code Windows\KinectArm\obj\Debug\BodyBasics-WPF.csproj.CoreCompileInputs.cache
+C:\Users\clair\Documents\Cours ESME\ingé 3\Projet Biotech\Chirurginoux\Code\Code Windows\KinectArm\obj\Debug\BodyBasics-WPF.csproj.CopyComplete
+C:\Users\clair\Documents\Cours ESME\ingé 3\Projet Biotech\Chirurginoux\Code\Code Windows\KinectArm\obj\Debug\BodyBasics-WPF.exe
+C:\Users\clair\Documents\Cours ESME\ingé 3\Projet Biotech\Chirurginoux\Code\Code Windows\KinectArm\obj\Debug\BodyBasics-WPF.pdb

@@ -19,7 +19,7 @@ dQ3=0
 dQ4=0
 dQ4+=-90
 
-Q1=math.radians(dQ1)
+Q1=math.radians(dQ1)         
 Q2=math.radians(dQ2)
 Q3=math.radians(dQ3)
 Q4=math.radians(dQ4)
