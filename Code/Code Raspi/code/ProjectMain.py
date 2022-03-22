@@ -3,16 +3,16 @@ from Control_Thread import Control
 import os
 
 def init_all():
-    #base_motor=MotorControl(gpio_motor=17)
-    art1_motor=MotorControl(gpio_motor=13)
-    art2_motor=MotorControl(gpio_motor=12)
-    #pince_motor=MotorControl(gpio_motor=10,pos_max=9,pos_min=5,frequency=50)
+    base_motor=MotorControl(gpio_motor=17)
+    art1_motor=MotorControl(gpio_motor=13,initpos=42,pos_min=12,pos_max=72,frequency=300)
+    art2_motor=MotorControl(gpio_motor=12,initpos=42,pos_min=12,pos_max=72,frequency=300)
+    pince_motor=MotorControl(gpio_motor=10,pos_max=9,pos_min=5,frequency=50)
     
     motor_dict= {
-        #"motor_base":base_motor,
+        "motor_base":base_motor,
         "motor_art_1":art1_motor,
         "motor_art_2":art2_motor,
-        #"motor_pince":pince_motor,
+        "motor_pince":pince_motor,
     }
 
     MTH=Control(motors_dico=motor_dict)

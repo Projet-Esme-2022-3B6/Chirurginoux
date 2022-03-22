@@ -28,14 +28,15 @@ class MotorControl:
         if value<self.position:
             for i in range (self.position*10,value*10,-1):
                 self.motorPWM.ChangeDutyCycle(i/10)
-                time.sleep(0.2)
+                time.sleep(0.01)
         
         if value>self.position:
             for i in range (self.position*10,value*10,1):
                 self.motorPWM.ChangeDutyCycle(i/10)
-                time.sleep(0.2)
+                time.sleep(0.01)
+                
         self.motorPWM.ChangeDutyCycle(value)
-        time.sleep(0.2)
+        time.sleep(0.01)
         self.position=value
         self.motorPWM.ChangeDutyCycle(0)
     
