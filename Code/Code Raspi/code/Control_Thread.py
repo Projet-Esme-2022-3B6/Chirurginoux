@@ -13,23 +13,37 @@ class Control:
     def move_all(self):
         try:
             while True:
-                x=input("enter the angle 1 :\n")
-                x=int(x)
-                y=input("enter the angle 2 :\n")
-                y=int(y)
-                x=x*60/180 +12
-                y=y*60/180 +12
-                x=round(x)
-                y=round(y)
-                print(y)
-                print(x)
+                x1=input("enter the angle 1 :\n")
+                x1=int(x1)
+                x2=input("enter the angle 2 :\n")
+                x2=int(x2)
+                x3=input("enter the angle 3 :\n")
+                x3=int(x3)
+                x4=input("enter the angle 4 :\n")
+                x4=int(x4)
                 
-                t1=threading.Thread(target=self.mot_thread, args=("motor_art_1",x,))
-                t2=threading.Thread(target=self.mot_thread, args=("motor_art_2",y,))
+                x1=x1*60/180 +12
+                x2=x2*60/180 +12
+                x3=x3*60/180 +12
+                x4=x4*60/180 +12
+                x1=round(x1)
+                x2=round(x2)
+                x3=round(x3)
+                x4=round(x4)
+                
+                t1=threading.Thread(target=self.mot_thread, args=("motor_base",x1,))
+                t2=threading.Thread(target=self.mot_thread, args=("motor_art_1",x2,))
+                t3=threading.Thread(target=self.mot_thread, args=("motor_art_2",x3,))
+                t4=threading.Thread(target=self.mot_thread, args=("motor_pince",x4,))
                 t1.start()
                 t2.start()
+                t3.start()
+                t4.start()
                 t1.join()
                 t2.join()
+                t3.join()
+                t4.join()
+                
         except KeyboardInterrupt:
             for mot_key in self.MD:
                 self.MD[mot_key].Quit()
