@@ -8,22 +8,28 @@ import math
 
 
 def Modele_Geom(Q1,Q2,Q3,Q4):
-    M11=(math.cos(Q1)*math.cos(Q2+Q3)*math.cos(Q4))+(math.sin(Q1)*math.sin(Q4)) # C_1 (C_23)C_4+S_1 S_4
-    M21=(math.sin(Q1)*math.cos(Q2+Q3)*math.cos(Q4))-(math.cos(Q1)*math.sin(Q4)) # S_1 (C_23 ) C_4-C_1 S_4
-    M31=-math.sin(Q2+Q3)*math.cos(Q4)                                           # -S_23 C_4
     
-    M12=(-math.cos(Q1)*math.cos(Q2+Q3)*math.sin(Q4))+(math.sin(Q1)*math.cos(Q4))    # -C_1 (C_23)S_4+S_1 C_4
-    M22=(-math.sin(Q1)*math.cos(Q2+Q3)*math.sin(Q4))-(math.cos(Q1)*math.cos(Q4))    # -S_1 (C_23)S_4-C_1 C_4
-    M32=-math.sin(Q2+Q3)*math.sin(Q4)                                               # S_23 S_4
     
-    M13=-math.cos(Q1)*math.sin(Q2+Q3)
-    M23=-math.sin(Q1)*math.sin(Q2+Q3)
-    M33=-math.cos(Q2+Q3)
     
-    M14=math.cos(Q1)*(a2*math.cos(Q2)-d4*math.sin(Q2+Q3))
-    M24=math.sin(Q1)*(a2*math.cos(Q2)-d4*math.sin(Q2+Q3))
-    M34=d1-a2*math.sin(Q2)-d4*math.cos(Q2+Q3)
+    S1=math.cos(Q2)*math.sin(Q1)*math.sin(Q3) + math.cos(Q3)*math.sin(Q1)*math.sin(Q2)
+    S2=math.cos(Q1)*math.cos(Q2)*math.sin(Q3) + math.cos(Q1)*math.cos(Q3)*math.sin(Q2)
+    S3=d4*math.cos(Q2+Q3) + a2*math.cos(Q2)
     
+    M11=(math.cos(Q4)*S2)-(math.sin(Q1)*math.sin(Q4)) 
+    M21=-math.cos(Q2+Q3)*math.cos(Q4)
+    M31=-math.cos(Q1)*math.sin(Q4)-(math.cos(Q4)*S1)                                     
+    
+    M12=-math.cos(Q4)*math.sin(Q1)-(math.sin(Q4)*S2)   
+    M22=math.cos(Q2+Q3)*math.sin(Q4)    
+    M32=math.sin(Q4)*S1-(math.cos(Q1)*math.cos(Q4))                                         
+    
+    M13=math.cos(Q2+Q3)*math.cos(Q1)
+    M23=math.sin(Q2+Q3)
+    M33=-math.cos(Q2+Q3)*math.sin(Q1)
+    
+    M14=math.cos(Q1)*S3
+    M24=d1+(d4*math.sin(Q2+Q3))+(a2*math.sin(Q2))
+    M34=-math.sin(Q1)*S3  
     
     MGD=[[M11,M12,M13,M14],
          [M21,M22,M23,M24],
@@ -55,9 +61,9 @@ d4=0.375
 
 #Modèles Geometrique Direct
 dQ1=0
-dQ2=45
-dQ3=70
-dQ4=30
+dQ2=90
+dQ3=0
+dQ4=0
 
 
 Q1=math.radians(dQ1)
