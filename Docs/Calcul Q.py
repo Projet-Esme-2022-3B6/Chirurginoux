@@ -8,9 +8,6 @@ import math
 
 
 def Modele_Geom(Q1,Q2,Q3,Q4):
-    
-    
-    
     S1=math.cos(Q2)*math.sin(Q1)*math.sin(Q3) + math.cos(Q3)*math.sin(Q1)*math.sin(Q2)
     S2=math.cos(Q1)*math.cos(Q2)*math.sin(Q3) + math.cos(Q1)*math.cos(Q3)*math.sin(Q2)
     S3=d4*math.cos(Q2+Q3) + a2*math.cos(Q2)
@@ -31,22 +28,22 @@ def Modele_Geom(Q1,Q2,Q3,Q4):
     M24=d1+(d4*math.sin(Q2+Q3))+(a2*math.sin(Q2))
     M34=-math.sin(Q1)*S3  
     
-    MGD=[[M11,M12,M13,M14],
-         [M21,M22,M23,M24],
-         [M31,M32,M33,M34],
+    MGD=[[round(M11,3),round(M12,3),round(M13,3),round(M14,3)],
+         [round(M21,3),round(M22,3),round(M23,3),round(M24,3)],
+         [round(M31,3),round(M32,3),round(M33,3),round(M34,3)],
          [0,0,0,1]]
     
     print(MGD[0])
     print(MGD[1])
     print(MGD[2])
     print(MGD[3])
-
+   
     return MGD
 
 def Modele_inverse (w1,w2,w3,w4,w5,w6):
-    q1=math.atan2(w2, w1)
-    q23=math.atan2((math.cos(q1)*w4+math.sin(q1)*w5), w6)
-    q2=math.atan2((d1-w3-d4*math.cos(q23)),(math.cos(q1)*w1+math.sin(q1)*w2+d4*math.sin(q23)))
+    q1=math.atan2(-w3, w1)
+    q23=math.atan2(w5,math.sqrt(w4**2+w6**2))
+    q2=math.atan2(w2-d1-d4*math.sin(q23),math.sqrt(w1**2+w3**2)-d4*math.cos(q23))
     q3=q23-q2
     rac=math.sqrt(w4**2+w5**2+w6**2)
     q4=math.pi*math.log(rac, math.e)
@@ -61,10 +58,17 @@ d4=0.375
 
 #Modèles Geometrique Direct
 dQ1=0
-dQ2=90
-dQ3=0
+dQ2=50
+dQ3=50
 dQ4=0
 
+
+print("q1= ", dQ1)
+
+print("q2= ", dQ2)
+print("q3= ", dQ3)
+print("q4= ", dQ4)
+print()
 
 Q1=math.radians(dQ1)
 Q2=math.radians(dQ2)
@@ -105,11 +109,12 @@ dq2=round(dq2,2)
 dq3=round(dq3,2)
 dq4=round(dq4,2)
 
-
+print()
 print("q1= ", dq1)
 
 print("q2= ", dq2)
 print("q3= ", dq3)
 print("q4= ", dq4)
+print()
 
 MGD=Modele_Geom(q1,q2,q3,q4)
