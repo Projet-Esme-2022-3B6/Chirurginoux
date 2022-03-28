@@ -41,14 +41,21 @@ def Modele_Geom(Q1,Q2,Q3,Q4):
     return MGD
 
 def Modele_inverse (w1,w2,w3,w4,w5,w6):
-    q1=math.atan2(-w3, w1)
-    q23=math.atan2(w5,math.sqrt(w4**2+w6**2))
-    q2=math.atan2(w2-d1-d4*math.sin(q23),math.sqrt(w1**2+w3**2)-d4*math.cos(q23))
-    q3=q23-q2
-    rac=math.sqrt(w4**2+w5**2+w6**2)
-    q4=math.pi*math.log(rac, math.e)
+    x=w1
+    y=w2
+    z=w3
+    x2=math.sqrt(x**2+z**2)
+    y2=y-d1
+    q1=math.atan2(-z, x)
+    q3=math.acos((x2**2+y2**2-a2**2-d4**2)/(2*a2*d4))
+    q2=math.atan2(y2,x2)-math.atan2(d4*math.sin(q3),a2+d4*math.cos(q3))
+    
+    
+    q4=0
+  
     
     return q1,q2,q3,q4
+
 
 
 
