@@ -2,7 +2,7 @@ import socket
 
 class serveurUDP:
     def __init__(self):
-        localIP     = "192.168.11.146"
+        localIP     = "192.168.138.146"
         localPort   = 12345
         self.bufferSize  = 1024
 

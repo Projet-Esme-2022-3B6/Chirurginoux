@@ -6,7 +6,7 @@ def init_all():
     base_motor=MotorControl(gpio_motor=18,initpos=42,pos_min=12,pos_max=72,frequency=300)
     art1_motor=MotorControl(gpio_motor=26,initpos=42,pos_min=12,pos_max=72,frequency=300)
     art2_motor=MotorControl(gpio_motor=13,initpos=42,pos_min=12,pos_max=72,frequency=300)
-    pince_motor=MotorControl(gpio_motor=12,initpos=42,pos_min=12,pos_max=72,frequency=300)
+    pince_motor=MotorControl(gpio_motor=12,initpos=12,pos_min=2,pos_max=12,frequency=50)
     
     motor_dict= {
         "motor_base":base_motor,
@@ -22,4 +22,3 @@ def init_all():
     
 if __name__=="__main__":
     init_all()
-
