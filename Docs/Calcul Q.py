@@ -50,8 +50,8 @@ def Modele_inverse (w1,w2,w3,w4,w5,w6):
     q3=math.acos((x2**2+y2**2-a2**2-d4**2)/(2*a2*d4))
     q2=math.atan2(y2,x2)-math.atan2(d4*math.sin(q3),a2+d4*math.cos(q3))
     
-    
-    q4=0
+    rac=math.sqrt(w4**2+w5**2+w6**2)
+    q4=math.pi*math.log(rac, math.e)
   
     
     return q1,q2,q3,q4
@@ -65,9 +65,10 @@ d4=0.375
 
 #Modèles Geometrique Direct
 dQ1=0
-dQ2=50
+dQ2=20
 dQ3=50
-dQ4=0
+dQ4=30
+
 
 
 print("q1= ", dQ1)

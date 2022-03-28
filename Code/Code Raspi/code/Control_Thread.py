@@ -1,6 +1,7 @@
 import threading
 import time
 from serverUDP import serveurUDP
+import math
 
 class Control:
     def __init__(self,motors_dico):
@@ -9,7 +10,21 @@ class Control:
     
     def mot_thread(self,motor_name,value):
         self.MD[motor_name].goto(value)
+    
+    def modele_geo(self,x,y,z):
+        d1=0.145
+        a2=0.253
+        d4=0.375
         
+        x2=math.sqrt(x**2+z**2)
+        y2=y-d1
+        
+        q1=math.atan2(-z, x)
+        q3=math.acos((x2**2+y2**2-a2**2-d4**2)/(2*a2*d4))
+        q2=math.atan2(y2,x2)-math.atan2(d4*math.sin(q3),a2+d4*math.cos(q3))
+        
+        return q1,q2,q3
+    
     def move_all(self):
         try:
             while True:
@@ -60,7 +75,18 @@ class Control:
                 modele Géometrique
                 """
                 
-                q1,q2,q3,q4=...
+                q1,q2,q3=self.modele_geo(posx,posy,posz)
+                
+                q4=0
+                
+                q1=q1+90
+                q3=q3+90
+                q4=q4+90
+                
+                print(q1)
+                print(q2)
+                print(q3)
+                print(q4)
                 
                 q1=q1*60/180 +12
                 q2=q2*60/180 +12
@@ -70,10 +96,7 @@ class Control:
                 q2=round(q2)
                 q3=round(q3)
                 q4=round(q4)
-                print(q1)
-                print(q2)
-                print(q3)
-                print(q4)
+                
                 
                 t1=threading.Thread(target=self.mot_thread, args=("motor_base",q1,))
                 t2=threading.Thread(target=self.mot_thread, args=("motor_art_1",q2,))
