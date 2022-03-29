@@ -2,7 +2,7 @@ import socket
 
 class serveurUDP:
     def __init__(self):
-        localIP     = "192.168.138.146"
+        localIP     = "192.168.45.146"
         localPort   = 12345
         self.bufferSize  = 1024
 
@@ -42,15 +42,17 @@ class serveurUDP:
         posx=pos[0].split(",")
         posx=posx[0]+"."+posx[1]
         posx=float(posx)
+        posx=posx/100
         
         posy=pos[1].split(",")
         posy=posy[0]+"."+posy[1]
         posy=float(posy)
-        """
+        posy=posy/100
+        
         posz=pos[2].split(",")
         posz=posz[0]+"."+posz[1]
         posz=float(posz)
-        """
+        posz=posz/100
         return posx,posy,posz
         
         # Sending a reply to client

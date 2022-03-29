@@ -39,6 +39,18 @@ class MotorControl:
         time.sleep(0.01)
         self.position=value
         self.motorPWM.ChangeDutyCycle(0)
+        
+    def geomove(self,value):
+         #verify and stay between 0° and 180°
+        if value>self.pos_max:
+            value=self.pos_max
+        if value<self.pos_min:
+            value=self.pos_min
+                
+        self.motorPWM.ChangeDutyCycle(value)
+        time.sleep(0.5)
+        self.position=value
+        self.motorPWM.ChangeDutyCycle(0)
     
     def Quit(self):
         self.motorPWM.stop()

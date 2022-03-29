@@ -10,14 +10,21 @@ class Control:
     
     def mot_thread(self,motor_name,value):
         self.MD[motor_name].goto(value)
+    def geomot_thread(self,motor_name,value):
+        self.MD[motor_name].geomove(value)
     
     def modele_geo(self,x,y,z):
-        d1=0.145
-        a2=0.253
-        d4=0.375
+        d1=145
+        a2=253
+        d4=375
+        
+        x=abs(x)
+        y=abs(y)
+        z=abs(z)
         
         x2=math.sqrt(x**2+z**2)
         y2=y-d1
+        
         
         q1=math.atan2(-z, x)
         q3=math.acos((x2**2+y2**2-a2**2-d4**2)/(2*a2*d4))
@@ -25,7 +32,7 @@ class Control:
         
         return q1,q2,q3
     
-    def move_all(self):
+    def mover(self):
         try:
             while True:
                 x1=input("enter the angle 1 :\n")
@@ -65,7 +72,7 @@ class Control:
             print("goodbye")
     
     
-    def mover(self):
+    def move_all(self):
         i=0
         try:
             while True:
@@ -98,10 +105,10 @@ class Control:
                 q4=round(q4)
                 
                 
-                t1=threading.Thread(target=self.mot_thread, args=("motor_base",q1,))
-                t2=threading.Thread(target=self.mot_thread, args=("motor_art_1",q2,))
-                t3=threading.Thread(target=self.mot_thread, args=("motor_art_2",q3,))
-                t4=threading.Thread(target=self.mot_thread, args=("motor_pince",q4,))
+                t1=threading.Thread(target=self.geomot_thread, args=("motor_base",q1,))
+                t2=threading.Thread(target=self.geomot_thread, args=("motor_art_1",q2,))
+                t3=threading.Thread(target=self.geomot_thread, args=("motor_art_2",q3,))
+                t4=threading.Thread(target=self.geomot_thread, args=("motor_pince",q4,))
                 t1.start()
                 t2.start()
                 t3.start()
