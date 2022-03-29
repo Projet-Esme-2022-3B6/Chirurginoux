@@ -316,7 +316,7 @@ namespace Microsoft.Samples.Kinect.BodyBasics
         public void connectUDP()
         {
             this.client = new UdpClient();
-            IPEndPoint ep = new IPEndPoint(IPAddress.Parse("192.168.23.146"), 12345); // endpoint where server is listening
+            IPEndPoint ep = new IPEndPoint(IPAddress.Parse("192.168.45.146"), 12345); // endpoint where server is listening
             this.client.Connect(ep);
         }
 
@@ -431,20 +431,22 @@ namespace Microsoft.Samples.Kinect.BodyBasics
                             CameraSpacePoint RHPos = joints[JointType.HandRight].Position;
                             CameraSpacePoint SSPos = joints[JointType.SpineShoulder].Position;
                             counter = counter + 1;
-                            if (counter % 10 == 0)
+                            if (body.HandRightState==HandState.Closed)
                             {
-                                float FPosX = (SSPos.X - RHPos.X) * -100;
-                                float FPosY = ((SSPos.Y - RHPos.Y) * -100) + 30;
-                                float FPosZ = (SSPos.Z - RHPos.Z) * 100;
+                                if (counter % 10 == 0)
+                                {
+                                    float FPosX = (SSPos.X - RHPos.X) * -100;
+                                    float FPosY = ((SSPos.Y - RHPos.Y) * -100) + 30;
+                                    float FPosZ = (SSPos.Z - RHPos.Z) * 100;
 
 
 
-                                this.RPosXText = "FPos X" + FPosX.ToString();
-                                this.RPosYText = "FPos Y" + FPosY.ToString();
-                                this.RPosZText = "FPos Z" + FPosZ.ToString();
-                                this.SendPosition(FPosX.ToString(), FPosY.ToString(), FPosZ.ToString());
+                                    this.RPosXText = "FPos X" + FPosX.ToString();
+                                    this.RPosYText = "FPos Y" + FPosY.ToString();
+                                    this.RPosZText = "FPos Z" + FPosZ.ToString();
+                                    this.SendPosition(FPosX.ToString(), FPosY.ToString(), FPosZ.ToString());
+                                }
                             }
-
                             ///Console.WriteLine($"RHPos X {RHPos.X}");
                             ///Console.WriteLine($"RHPos Y {RHPos.Y}");
                             ///Console.WriteLine($"RHPos Z {RHPos.Z}");
