@@ -1,6 +1,8 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\KinectArm"
   ],
+  "SelectedNode": "\\KinectArm\\MainWindow.xaml.cs",
   "PreviewInSolutionExplorer": false
 }
