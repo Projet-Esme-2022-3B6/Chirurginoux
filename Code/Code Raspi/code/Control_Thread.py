@@ -56,7 +56,7 @@ class Control:
                 t1=threading.Thread(target=self.mot_thread, args=("motor_base",x1,))
                 t2=threading.Thread(target=self.mot_thread, args=("motor_art_1",x2,))
                 t3=threading.Thread(target=self.mot_thread, args=("motor_art_2",x3,))
-                t4=threading.Thread(target=self.mot_thread, args=("motor_pince",x4,))
+                t4=threading.Thread(target=self.geomot_thread, args=("motor_pince",x4,))
                 t1.start()
                 t2.start()
                 t3.start()

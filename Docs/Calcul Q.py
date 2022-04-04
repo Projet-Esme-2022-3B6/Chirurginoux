@@ -59,16 +59,20 @@ def Modele_inverse (w1,w2,w3,w4,w5,w6):
 
 
 
-d1=0.145
-a2=0.253
-d4=0.375
+d1=145
+a2=253
+d4=375
 
 #Modèles Geometrique Direct
-dQ1=0
-dQ2=20
-dQ3=50
-dQ4=30
+dQ1=90
+dQ2=0
+dQ3=90
+dQ4=90
 
+dQ1=dQ1-90
+dQ2=dQ2
+dQ3=dQ3-90
+dQ4=dQ4-90
 
 
 print("q1= ", dQ1)
